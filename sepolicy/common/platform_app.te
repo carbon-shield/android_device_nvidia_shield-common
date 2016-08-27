@@ -28,6 +28,11 @@ allow platform_app system_app_service:service_manager find;
 allow platform_app cifs:dir create_dir_perms;
 allow platform_app cifs:file create_file_perms;
 
+# As determined by Audit2Allow
+allow platform_app hwui_prop:file { getattr open read };
+allow priv_app device:dir { open read };
+allow priv_app hwui_prop:file { getattr open read };
+
 # Allow to write to nvfeedback log file
 allow platform_app anr_data_file:file write;
 

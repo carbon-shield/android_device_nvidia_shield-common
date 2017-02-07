@@ -97,6 +97,10 @@ ifneq ($(TARGET_TEGRA_VERSION),t114)
 	PRODUCT_PACKAGES += libtinycompress
 endif
 
+# HALs
+PRODUCT_PACKAGES += power.tegra \
+                    thermal.tegra
+
 # idc
 ifneq ($(TARGET_TEGRA_TOUCH),)
         PRODUCT_PACKAGES += \

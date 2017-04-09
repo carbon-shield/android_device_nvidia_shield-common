@@ -26,9 +26,6 @@ allow platform_app cifs:file create_file_perms;
 allow platform_app fuseblk:dir create_dir_perms;
 allow platform_app fuseblk:file create_file_perms;
 
-# Comment out now, Audit2Allow for right symbol later
-#allow platform_app healthd_service:service_manager find;
-
 # Sku files and RP3 partition
 r_dir_file(platform_app, rpx_block_device)
 r_dir_file(platform_app, rpx_file)

@@ -152,3 +152,4 @@ allow system_app kernel:system syslog_read;
 
 # Allow Settings to recover after resolution changes
 dontaudit system_app self:capability2 { block_suspend };
+

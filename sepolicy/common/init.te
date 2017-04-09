@@ -31,9 +31,6 @@ allow init tmpfs:lnk_file { create_file_perms relabelfrom };
 # Access to write debugfs
 allow init debugfs:file write;
 
-# As determined by Audit2Allow
-allow init debugfs:file write;
-
 # For init to write to kmsg
 userdebug_or_eng(`
 allow init kmsg_device:chr_file write;
